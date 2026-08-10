@@ -1,0 +1,18 @@
+activity:
+  description: ""
+  id: PaymentRepoActivityNonDefault
+  inputs: {}
+  name: PaymentRepoActivityNonDefault
+  outputs: {}
+  manual:
+    tasks:
+      - id: Task
+        name: Task
+        required: true
+        description: ""
+        duration: 1d
+        userGroups:
+          - account._account_all_users
+        users: []
+        execute:
+          processes: none
