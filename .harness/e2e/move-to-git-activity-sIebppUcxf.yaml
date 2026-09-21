@@ -1,0 +1,40 @@
+activity:
+  id: e2e-move-to-git-activity-CsepCWMLPf
+  name: Test Pipeline Activity
+  description: Pipeline activity for E2E testing
+  pipeline:
+    pipeline: default/default_project/testAb
+    inputSet:
+      identifier: testAb
+      stages:
+        - stage:
+            identifier: c
+            type: Custom
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: ShellScript_1
+                      type: ShellScript
+                      spec:
+                        source:
+                          type: Inline
+                          spec:
+                            script: ""
+        - stage:
+            identifier: deploy
+            type: Deployment
+            spec:
+              service:
+                serviceRef: <+activityInput.ActivityVarSvc>
+                serviceInputs: <+input>
+              environment: {}
+  inputs:
+    ActivityVarEnv:
+      description: Environment
+      type: string
+      default: env1
+    ActivityVarSvc:
+      description: ""
+      type: string
+      default: service1service1service1service1
