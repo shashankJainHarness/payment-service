@@ -1,0 +1,13 @@
+process:
+  name: E2E Remote Process
+  id: e2e-remote-process-subbsJEzUb
+  description: Process for GitX e2e
+  phases:
+    - phase:
+        name: Phase 1
+        id: phase1
+        owners: []
+        activities:
+          - name: Activity 1
+            id: activity1
+            activity: e2e-gitx-act-DjCvEQhm
