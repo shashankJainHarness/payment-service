@@ -1,6 +1,6 @@
 activity:
   id: e2e-remote-activity-JNBFztHJOr
-  name: Test Pipeline Activity
+  name: Updated Remote Activity
   description: Pipeline activity for E2E testing
   pipeline:
     pipeline: default/default_project/testAb
