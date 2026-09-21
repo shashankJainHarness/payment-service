@@ -1,5 +1,5 @@
 process:
-  name: E2E Base Branch Process
+  name: E2E Feature Branch Process
   id: e2e-gitx-newbranch-proc-nVAMeUdXJH
   description: Process for GitX e2e
   phases:
