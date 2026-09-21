@@ -1,5 +1,5 @@
 process:
-  name: E2E GitX Exec Process
+  name: E2E GitX Exec Process Feature
   id: e2e-gitx-exec-proc-IJBHKlMAPu
   description: Process for GitX e2e
   phases:
