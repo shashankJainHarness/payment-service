@@ -1,0 +1,11 @@
+id: e2e-remote-input-bxOnpIjvkG
+name: E2E GitX Process Input
+description: Process input for GitX e2e
+global:
+  inputs: {}
+phases:
+  - id: phase1
+    inputs: {}
+    activities:
+      - id: activity1
+        with: {}
