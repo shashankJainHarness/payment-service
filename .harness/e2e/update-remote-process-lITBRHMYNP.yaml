@@ -1,5 +1,5 @@
 process:
-  name: E2E Remote Process
+  name: E2E Updated Remote Process
   id: e2e-remote-process-RsXIwbGheO
   description: Process for GitX e2e
   phases:
