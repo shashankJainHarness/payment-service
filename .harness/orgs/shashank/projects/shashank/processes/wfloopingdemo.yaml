@@ -21,4 +21,4 @@ process:
               fields:
                 service:
                   type: string
-              values: <+releaseInput.global.ServicesList>
+              values: <+pipeline.name>
