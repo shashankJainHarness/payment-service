@@ -1,6 +1,6 @@
 activity:
   id: bugbash_act_b
-  name: FROM-REPO-B-MAIN
+  name: FROM-REPO-B-PIN
   description: Bug bash manual activity bugbash_act_b
   manual:
     tasks:
