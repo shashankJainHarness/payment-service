@@ -1,0 +1,16 @@
+name: services_list_input3
+id: services_list_input3
+description: Process input with a global list of services
+global:
+  inputs:
+    ServicesList:
+      type: string
+      description: List of services
+      default: "[{\"service\":{\"serviceRef\":\"paymentgateway\",\"serviceInputs\":{\"serviceDefinition\":{\"type\":\"Kubernetes\",\"spec\":{\"artifacts\":{\"primary\":{\"primaryArtifactRef\":\"paymentserviceartifact\",\"sources\":[{\"identifier\":\"paymentserviceartifact\",\"type\":\"DockerRegistry\",\"spec\":{\"tag\":\"1.0.25\"}}]}}}}}},{\"service\":{\"serviceRef\":\"payment\",\"serviceInputs\":{\"serviceDefinition\":{\"type\":\"Kubernetes\",\"spec\":{\"artifacts\":{\"primary\":{\"primaryArtifactRef\":\"paymentserviceartifact\",\"sources\":[{\"identifier\":\"orderserviceartifact\",\"type\":\"DockerRegistry\",\"spec\":{\"tag\":\"1.0.25\"}}]}}}}}}]"
+phases:
+  - id: phase
+    activities:
+      - id: DevDeploymentActivity
+        inputs:
+          service:
+            value: <+target.service>
