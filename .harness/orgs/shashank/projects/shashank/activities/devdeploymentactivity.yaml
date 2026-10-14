@@ -1,0 +1,34 @@
+activity:
+  description: ""
+  id: DevDeploymentActivity
+  inputs:
+    service:
+      description: ""
+      type: service
+      metadata:
+        deploymentType: Kubernetes
+  name: DevDeploymentActivity
+  outputs: {}
+  pipeline:
+    pipeline: shashank/shashank/Deploy
+    inputSet:
+      pipeline:
+        identifier: Deploy
+        stages:
+          - stage:
+              identifier: stage
+              type: Deployment
+              spec:
+                service: <+activityInput.service>
+                environment:
+                  environmentRef: <+input>
+                  environmentInputs: <+input>
+                  serviceOverrideInputs: <+input>
+                  infrastructureDefinitions: <+input>
+    stages: []
+    expression: {}
+    branch: ""
+    connectorRef: ""
+    parentEntityConnectorRef: ""
+    parentEntityRepoName: ""
+    repoIdentifier: ""
