@@ -1,0 +1,12 @@
+activity:
+  id: bugbash_act_b
+  name: FROM-REPO-B-MAIN
+  description: Bug bash manual activity bugbash_act_b
+  manual:
+    tasks:
+      - name: Approve
+        id: approve
+        description: Approve
+        userGroups: ["account._account_all_users"]
+        required: true
+        duration: "2h"
