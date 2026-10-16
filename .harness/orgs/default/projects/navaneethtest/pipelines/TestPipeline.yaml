@@ -23,7 +23,7 @@ pipeline:
                     source:
                       type: Inline
                       spec:
-                        script: echo "main branch"
+                        script: echo "main-bofa demo branch"
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
