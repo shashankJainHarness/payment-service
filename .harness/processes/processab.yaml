@@ -17,14 +17,13 @@ process:
             name: ActivityMain
             description: ""
             depends-on: []
-          - activity: ActivityMain
-            id: ActivityMainMn
-            name: ActivityMainMn
-            description: ""
-            depends-on: []
-            gitBranch: main
           - activity: ActivityAuth
             id: ActivityAuth
             name: ActivityAuth
+            description: ""
+            depends-on: []
+          - activity: ActivityMain
+            id: ActivityMainMn
+            name: ActivityMainMn
             description: ""
             depends-on: []
