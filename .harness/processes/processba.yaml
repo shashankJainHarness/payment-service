@@ -31,3 +31,4 @@ process:
             name: ActivityMain
             description: ""
             depends-on: []
+            gitBranch: main
