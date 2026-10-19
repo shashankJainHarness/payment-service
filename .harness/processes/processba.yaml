@@ -17,3 +17,17 @@ process:
             name: ActivityMain
             description: ""
             depends-on: []
+    - phase:
+        id: phaserun
+        name: phaserun
+        description: ""
+        owners:
+          - account._account_all_users
+        depends-on: []
+        outputs: {}
+        activities:
+          - activity: ActivityMain
+            id: ActivityMain
+            name: ActivityMain
+            description: ""
+            depends-on: []
