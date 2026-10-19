@@ -33,3 +33,17 @@ process:
             description: ""
             depends-on: []
             gitBranch: main
+    - phase:
+        id: phaseauth
+        name: phaseauth
+        description: ""
+        owners:
+          - account._account_all_users
+        depends-on: []
+        outputs: {}
+        activities:
+          - activity: ActivityAuth
+            id: ActivityAuth
+            name: ActivityAuth
+            description: ""
+            depends-on: []
