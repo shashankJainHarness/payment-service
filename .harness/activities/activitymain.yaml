@@ -1,29 +1,20 @@
 activity:
   description: ""
   id: ActivityMain
-  inputs: {}
+  inputs:
+    bugbashpatch:
+      description: ""
+      type: string
+      default: value
+      optional: false
+      readOnly: false
+      value: value
   name: ActivityMain
   outputs: {}
   pipeline:
     pipeline: default/CCMProject/CCM_Service_Deploy
     inputSet:
-      name: ""
-      identifier: ""
-      orgIdentifier: default
-      projectIdentifier: CCMProject
-      repo: ""
-      branch: ""
-      connectorRef: ""
-      repoName: ""
-      storeType: INLINE
-      filePath: ""
-      provider:
-        type: Harness
-        titleLabelKey: common.harnessCodeRepo
-        descriptionLabelKey: common.harnessCodeRepoInfo
-        icon: code
-        size: 20
-        disabled: false
+      pipeline: {}
     stages: []
     expression: {}
     branch: ""
