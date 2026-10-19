@@ -17,7 +17,6 @@ process:
             name: ActivityMain
             description: ""
             depends-on: []
-            gitBranch: main
     - phase:
         id: phaserun
         name: phaserun
