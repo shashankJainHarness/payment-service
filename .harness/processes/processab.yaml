@@ -1,0 +1,30 @@
+process:
+  id: ProcessAB
+  name: ProcessAB
+  description: ""
+  phases:
+    - phase:
+        id: phaseauth
+        name: phaseauth
+        description: ""
+        owners:
+          - account._account_all_users
+        depends-on: []
+        outputs: {}
+        activities:
+          - activity: ActivityMain
+            id: ActivityMain
+            name: ActivityMain
+            description: ""
+            depends-on: []
+          - activity: ActivityMain
+            id: ActivityMainMn
+            name: ActivityMainMn
+            description: ""
+            depends-on: []
+            gitBranch: main
+          - activity: ActivityAuth
+            id: ActivityAuth
+            name: ActivityAuth
+            description: ""
+            depends-on: []
