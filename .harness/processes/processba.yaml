@@ -47,3 +47,4 @@ process:
             name: ActivityAuth
             description: ""
             depends-on: []
+            gitBranch: auth-patch-bugbash
