@@ -1,0 +1,33 @@
+activity:
+  description: ""
+  id: ActivityMain
+  inputs: {}
+  name: ActivityMain
+  outputs: {}
+  pipeline:
+    pipeline: default/CCMProject/CCM_Service_Deploy
+    inputSet:
+      name: ""
+      identifier: ""
+      orgIdentifier: default
+      projectIdentifier: CCMProject
+      repo: ""
+      branch: ""
+      connectorRef: ""
+      repoName: ""
+      storeType: INLINE
+      filePath: ""
+      provider:
+        type: Harness
+        titleLabelKey: common.harnessCodeRepo
+        descriptionLabelKey: common.harnessCodeRepoInfo
+        icon: code
+        size: 20
+        disabled: false
+    stages: []
+    expression: {}
+    branch: ""
+    connectorRef: ""
+    parentEntityConnectorRef: ""
+    parentEntityRepoName: ""
+    repoIdentifier: ""
