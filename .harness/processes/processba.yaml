@@ -23,9 +23,3 @@ process:
             description: ""
             depends-on: []
             gitBranch: main-patch-bugbash
-          - activity: ActivityMain
-            id: ActivityMainBranch
-            name: ActivityMainBranch
-            description: ""
-            depends-on: []
-            gitBranch: main-patch-branch
