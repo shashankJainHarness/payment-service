@@ -5,10 +5,10 @@ activity:
     bugbashpatch:
       description: ""
       type: string
-      default: value
+      default: <+process.identifier>
       optional: false
       readOnly: false
-      value: value
+      value: <+process.identifier>
   name: ActivityMain
   outputs: {}
   pipeline:
