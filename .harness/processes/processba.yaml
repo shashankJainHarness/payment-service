@@ -17,3 +17,9 @@ process:
             name: ActivityMain
             description: ""
             depends-on: []
+          - activity: ActivityMain
+            id: ActivityMainPatch
+            name: ActivityMainPatch
+            description: ""
+            depends-on: []
+            gitBranch: main-patch-bugbash
